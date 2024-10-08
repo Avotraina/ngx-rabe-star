@@ -26,3 +26,28 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page. -->
 
+# NgxRabeStar
+
+NgxRabeStar is an Angular library that provides a customizable star rating component for your Angular applications. It allows users to rate items using a visual star-based interface, making it easy to implement and integrate rating functionality into your projects.
+
+Key features:
+  - Easy to use star rating component
+  - Accessibility-friendly
+  - Customizable styles to match your application's theme
+  - Cancelable rate
+
+
+## Installation
+
+To install NgxRabeStar, run the following command in your Angular project:
+
+"npm install ngx-rabe-star"
+
+## Usage
+
+Import the RabeStars component in your import.
+
+Then, you can use the star rating component in your templates:
+
+
+<ngx-rabe-star formControlName="rating"></ngx-rabe-star>

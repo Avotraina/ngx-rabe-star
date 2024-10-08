@@ -3,7 +3,7 @@ import { I_StarInterface } from '../../types/star.interface';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'lib-stars',
+  selector: 'ngx-rabe-star',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './stars.component.html',
