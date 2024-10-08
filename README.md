@@ -50,4 +50,4 @@ Import the RabeStars component in your import.
 Then, you can use the star rating component in your templates:
 
 
-<ngx-rabe-star formControlName="rating"></ngx-rabe-star>
+<ngx-rabe-star formControlName="rating" (ratingChange)="onRatingChange($event)"></ngx-rabe-star>
