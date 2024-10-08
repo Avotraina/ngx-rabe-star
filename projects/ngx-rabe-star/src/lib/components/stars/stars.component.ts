@@ -1,4 +1,4 @@
-import { Component, Input, input, signal } from '@angular/core';
+import { Component, Input, input, output, signal } from '@angular/core';
 import { I_StarInterface } from '../../types/star.interface';
 import { CommonModule } from '@angular/common';
 
@@ -20,7 +20,7 @@ export class RabeStars {
   @Input() disabled: boolean = false;
   @Input() customClass: string = '';
 
-
+  ratingChange = output<number>();
 
   private onTouched?() { }
   public onChange(star: number) { }
@@ -29,10 +29,11 @@ export class RabeStars {
     if (this.rating() == star) {
       this.rating.set(0);
       this.onChange(0);
-
+      this.ratingChange.emit(0);
     } else {
       this.rating.set(star);
       this.onChange(star);
+      this.ratingChange.emit(star);
     }
 
   }
