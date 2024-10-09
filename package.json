@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release --branches main"
   },
   "private": false,
   "dependencies": {
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Avotraina/ngx-rabe.git"
+    "url": "https://github.com/Avotraina/ngx-rabe-star.git"
   },
   "publishConfig": {
     "access": "restricted"
