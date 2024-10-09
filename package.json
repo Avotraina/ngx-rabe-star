@@ -1,12 +1,13 @@
 {
   "name": "ngx-rabe-star",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "semantic-release": "semantic-release"
   },
   "private": false,
   "dependencies": {
@@ -34,6 +35,14 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.2.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "semantic-release": "^24.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Avotraina/ngx-rabe.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
