@@ -29,10 +29,6 @@
   fill: #ffd700;
 }
 
-.half-star {
-  fill: url(#half-star-gradient);
-}
-
 .rating-label {
   margin-left: 10px;
   font-size: 14px;
@@ -114,7 +110,7 @@
 }
 
 .half-star {
-  fill: url(#half-star-gradient);
+  fill: #ffd700;
 }
 
 .empty-star {
@@ -122,5 +118,11 @@
 }
 
 .star-rating--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.star-rating--readonly {
   pointer-events: none;
 }
