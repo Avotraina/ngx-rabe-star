@@ -41,13 +41,25 @@ Key features:
 
 To install NgxRabeStar, run the following command in your Angular project:
 
-"npm install ngx-rabe-star"
+```
+
+npm install ngx-rabe-star
+
+```
 
 ### Usage
 
 Import the RabeStars component in your import.
 
+```
+import {RabeStars} from 'ngx-rabe-star';
+
+```
+
 Then, you can use the star rating component in your templates:
 
+```
 
 <ngx-rabe-star formControlName="rating" (ratingChange)="onRatingChange($event)" readonly="false" disabled="false"></ngx-rabe-star>
+
+```
