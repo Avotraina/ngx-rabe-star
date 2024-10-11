@@ -1,5 +1,5 @@
 
-<div class="star-rating" [class]="customClass" [ngClass]="{ 'star-rating--disabled': disabled || isDisabled, 'star-rating--readonly': readOnly }">
+<div class="star-rating" [class]="customClass" [ngClass]="{ 'star-rating--disabled': disabled || isDisabled, 'star-rating--readonly': readOnly }" [id]="id">
   @for (star of stars; track star) {
 
     <span class="star" (click)="rate(star, $event)" (mousemove)="setHoverRating(star, $event)" (mouseleave)="clearHoverRating()">

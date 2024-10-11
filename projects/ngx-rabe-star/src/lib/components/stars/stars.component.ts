@@ -29,6 +29,8 @@ export class RabeStars implements ControlValueAccessor {
   @Input() disabled: boolean = false;
   @Input() customClass: string = '';
   @Input() readOnly: boolean = false;
+  @Input() id: string = '';
+
 
   ratingChange = output<number>();
 
